@@ -43,5 +43,23 @@
             "tip": "Tip must be at least 15 characters",
             "topic": ""
         }
+    },
+    {
+        "time": 1675111849786,
+        "error_id": "230b4d22-66bc-4d7f-abfb-2a20df401c87",
+        "errors": {
+            "username": "Invalid username!",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        }
+    },
+    {
+        "time": 1675111932742,
+        "error_id": "13169d0a-6b36-4e04-854a-313f674f5c12",
+        "errors": {
+            "username": "Invalid username!",
+            "tip": "",
+            "topic": ""
+        }
     }
 ]

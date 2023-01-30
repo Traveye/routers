@@ -12,14 +12,12 @@ diagnostics.get("/", (req, res) => {
 
 // POST Route for a error logging
 diagnostics.post("/", (req, res) => {
-  // TODO: Logic for appending data to the db/diagnostics.json file
   const content = {
     time: Date.now(),
     error_id: uuidv4(),
     errors: req.body.errors
   }
-  console.log(content)
-  readAndAppend(content, path.join(__dirname, "../db/diagnostics.json"));
+  readAndAppend(content, path.join(__dirname, "../db/diagnostics.json")).then(() => res.send('Diagnostic added!'));
 });
 
 module.exports = diagnostics;
